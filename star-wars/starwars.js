@@ -1,5 +1,6 @@
 import { films } from '../data/films.js'
 import { people } from '../data/people.js'
+import { removeChildren } from '../util.js'
 
 let gallery = document.querySelector('.gallery')
 
