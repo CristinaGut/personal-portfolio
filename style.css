@@ -57,6 +57,7 @@ h1, h3 {
 #contact a {
     text-decoration: none;
     margin: 1rem;
+    font-size: small;
 }
 
 a {
