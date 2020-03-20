@@ -1,5 +1,6 @@
 import { films } from '../data/films.js'
 import { people } from '../data/people.js'
+import { removeChildren, getLastNumber } from '../util.js'
 
 let gallery = document.querySelector('.gallery')
 
@@ -26,21 +27,6 @@ otherButton.addEventListener("click", function(event) {
     populateDOM(otherCharacters)
 })
 
-function getLastNumber(url) {
-    let end = url.lastIndexOf('/') 
-    let start = end - 2
-    if (url.charAt(start) === '/') {
-        start++
-    }
-    return url.slice(start, end)
-}
-
-function removeChildren(element) {
-    while (element.firstChild) {
-        element.removeChild(element.firstChild)
-    }
-}
-
 function populateDOM(characters) {
     removeChildren(gallery)
     characters.forEach(person => {
@@ -50,7 +36,7 @@ function populateDOM(characters) {
         let personImg = document.createElement("img")
         personImg.src = `http://starwars-visualguide.com/assets/img/characters/${imageNum}.jpg`
 
-        personImg.addEventListener('error', (event) => {
+        personImg.addEventListener('error', event => {
             personImg.hidden = true
             //personImg.src = '.../images/bunny.jpeg
         })
