@@ -1,6 +1,6 @@
 :root {
 box-sizing: border-box;
-background-color: beige;
+background-image: url("../images/sky.jpeg");
 }
 
 .container {
@@ -8,12 +8,12 @@ background-color: beige;
 }
 
 .nav {
-    border: solid 2px black;
+    border: solid 2px white;
     padding-right: 1.2rem;
 }
 
 a > img {
-height: 15em;
+height: 14em;
 margin: 4px;
 }
 
@@ -21,8 +21,14 @@ button {
     height: 4rem;
     border-radius: 10px;
     font-size: larger;
-    background-color:  #a7a7a7;
+    background-color:  #696868;
     color: whitesmoke;
     font-weight: 500;
+    justify-content: center;
 }
 
+h1 {
+    color: whitesmoke;
+    justify-content: center;
+    display: flex;
+}
