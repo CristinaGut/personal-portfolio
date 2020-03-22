@@ -9,6 +9,8 @@
     justify-content: flex-end;
     background-color: rgb(241, 215, 65);
     position: fixed;
+    font-family: 'Noto Sans', sans-serif;      
+    /* font: 1.2em "Fira Sans", sans-serif; */
 }
 
 .nav-list {
@@ -33,25 +35,40 @@
     width: 100%;
     height: 100vh;
     background-color: rgb(196, 109, 109);
+    font-family: 'Gotu', sans-serif;
+
 }
 
-h1, h3 {
+h1 {
     color: #000;
     text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    margin: 1rem;
+    
+}
+
+h3 {
+    color: #000;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    
 }
 
 #project-list {
     display: flex;
     justify-content: space-around;
+    font-family: 'Work Sans', sans-serif;
 }
 
 #contact {
     display: flex;
     justify-content: center;
-    padding: 1.5rem;
-    margin: 1.5rem;
-    width: 100%;
+    padding: 1rem;
+    margin: 5.5rem;
     flex-wrap: wrap;
+    font-family: 'Work Sans', sans-serif;
 }
 
 #contact a {
