@@ -10,6 +10,7 @@ background-image: url("../images/sky.jpeg");
 .nav {
     border: solid 2px white;
     padding-right: 1.2rem;
+    
 }
 
 a > img {
@@ -25,6 +26,7 @@ button {
     color: whitesmoke;
     font-weight: 500;
     justify-content: center;
+    font-family: 'Gotu', sans-serif;
 }
 
 h1 {
