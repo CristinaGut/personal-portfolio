@@ -26,12 +26,12 @@ button {
     color: whitesmoke;
     font-weight: 500;
     justify-content: center;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Karla', sans-serif;
 }
 
 h1 {
     color: whitesmoke;
     justify-content: center;
     display: flex;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
 }
