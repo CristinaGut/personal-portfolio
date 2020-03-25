@@ -18,13 +18,13 @@
 .nav-list {
     display: flex;
     list-style-type: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 300;
 }
 
 .nav-list a {
     display: block;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     padding: 1rem;
     text-decoration: none;
 }
