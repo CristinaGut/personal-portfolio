@@ -16,8 +16,10 @@ header {
 }
 
 .nav {
-    border: solid 2px white;
+    border: solid 3px rgb(71, 103, 150);
     padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.733);
+    background-blend-mode: soft-light;
 }
 
 a {
