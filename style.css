@@ -64,12 +64,28 @@ h3 {
     display: flex;
     justify-content: space-around;
     font-family: 'Work Sans', sans-serif;
+  
 }
 
-#project-list figcaption {
+figure.project-tile figcaption {
     justify-content: center;
     text-decoration: none;
+    display: flex;
+    padding: .2rem;
 
+}
+
+figure.project-tile {
+    border-radius: 1.4rem;
+    border-style: solid;
+    border-spacing: 1rem;
+    padding: .25rem;
+    border-color: rgba(143, 172, 191, 1);
+}       
+/* above code for border around images */
+
+figure.project-tile img {
+    border-radius: 2.2rem;
 }
 
 #contact {
@@ -100,12 +116,16 @@ footer.foot {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
-    height: 60px;
+    font-size: 1rem;
+    height: 120px;
     background-color: #0D0D0D; ;
     color: #fff;
 }
 
+footer.foot p {
+    margin-left: 2rem;
+    padding: .5rem;
+}
 
 /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
