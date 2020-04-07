@@ -75,13 +75,13 @@ figure.project-tile figcaption {
 
 }
 
-figure.project-tile {
+/* figure.project-tile {
     border-radius: 1.4rem;
     border-style: solid;
     border-spacing: 1rem;
     padding: .25rem;
     border-color: rgba(143, 172, 191, 1);
-}       
+}  */      
 /* above code for border around images */
 
 figure.project-tile img {
