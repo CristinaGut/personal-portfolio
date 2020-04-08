@@ -96,12 +96,14 @@ figure.project-tile img {
     margin-top: 8rem; 
     flex-wrap: wrap;
     font-family: 'Work Sans', sans-serif;
+    color: whitesmoke;
 }
 
 #contact a {
     text-decoration: none;
     margin: 1rem;
     font-size: small;
+    background: transparent;
 }
 
 a {
@@ -110,6 +112,7 @@ text-decoration: none;
 
 i {
     font-size: 2rem;
+    text-decoration: none;
 }
 
 footer.foot {
