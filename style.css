@@ -10,7 +10,7 @@
     display: flex;
     justify-content: flex-end;
     background-color: rgba(68, 93, 114, 1);
-    position: fixed;
+    position: absolute;
     font-family: 'Noto Sans', sans-serif;      
     /* font: 1.2em "Fira Sans", sans-serif; */
 }
@@ -120,6 +120,8 @@ footer.foot {
     height: 120px;
     background-color: #0D0D0D; ;
     color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 footer.foot p {
