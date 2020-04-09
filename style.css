@@ -102,9 +102,8 @@ figure.project-tile img {
 #contact a {
     text-decoration: none;
     margin: 1rem;
-    font-size: small;
     background: transparent;
-    padding: 2rem;
+   
 }
 
 a {
@@ -112,7 +111,7 @@ text-decoration: none;
 }
 
 i {
-    font-size: 2rem;
+    font-size: 20px;
     text-decoration: none;
 }
 
