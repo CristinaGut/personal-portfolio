@@ -104,6 +104,7 @@ figure.project-tile img {
     margin: 1rem;
     font-size: small;
     background: transparent;
+    padding: 2rem;
 }
 
 a {
