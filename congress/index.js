@@ -37,7 +37,7 @@ function populateContainer (smallSenatorsArray) {
 }
 
 const republicans = filterSenators('party', 'R')
-const republicans = filterSenators('party', 'D')
+const democrats = filterSenators('party', 'D')
 
 const mostSeniority = simplifiedSenators(republicans).reduce(
     (acc, senator) => {
@@ -48,4 +48,4 @@ const mostSeniority = simplifiedSenators(republicans).reduce(
 
 console.log(mostSeniority)
 
-populateContainer(simplifiedSenators(republicans))
+populateContainer(simplifiedSenators(democrats))
