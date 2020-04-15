@@ -62,7 +62,7 @@ h3 {
 
 #project-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-family: 'Work Sans', sans-serif;
   
 }
@@ -86,6 +86,11 @@ figure.project-tile figcaption {
 
 figure.project-tile img {
     border-radius: 2.2rem;
+    transition: transform 1s;
+}
+
+figure.project-tile img:hover {
+    transform: translateY(-10px);
 }
 
 #contact {
