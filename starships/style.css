@@ -4,11 +4,18 @@
     background-attachment: fixed;
 }
 
-header {
+#main {
+    margin-left: 120px;
+    padding: 10px;
+}
+
+header.title {
     display: flex;
     justify-content: center;
     color: whitesmoke;
     padding: 1.1rem;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 52px;
 }
 
 .container {
@@ -16,10 +23,11 @@ header {
 }
 
 .nav {
-    border: solid 3px rgb(71, 103, 150);
+    border: solid 4px rgb(71, 103, 150);
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.733);
+    background-color: rgba(255, 255, 255, 0.651);
     background-blend-mode: soft-light;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 a {
@@ -29,12 +37,39 @@ a {
 
 li {
     list-style-type: none;
+    color: black;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 }
 
-.card {
+li:not(:last-child) {
+    margin-right:12px;
+}
+
+li:hover, li:focus {
+    color: rgb(11, 75, 160);
+}
+
+/* ul.navlist {
+    color: black;
+    transition: color 2s;
+}
+
+ul.navlist:hover {
+    color: #1C477F;
+} */
+
+div.card {
     border-radius: 6px;
     padding: 0.75rem 1rem;
-    box-shadow: 0 0.125em 0.25em rgba(scheme-invert, 0.1);
+    box-shadow: 10px, 5px, 5px grey;
+}
+
+h2.dialogMessage{
+    font-size: 21px;
+    font-weight: 500;
+
 }
 
 footer {

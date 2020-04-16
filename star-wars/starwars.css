@@ -28,7 +28,7 @@ button {
     border-radius: 10px;
     font-size: larger;
     background-color:  #696868;
-    color: rgb(233, 224, 224);
+    color: rgb(252, 240, 240);
     font-weight: 500;
     justify-content: center;
     font-family: 'Noto Sans TC', sans-serif;
@@ -37,31 +37,31 @@ button {
 
 #maleButton{
     transition: background-color 2s, transform 1s;
-    background-color:  #7399BD;/* #1C477F; */  /*  #746C6B */
+    background-color:  #747C81;  /*  #746C6B */
 }
 
 #maleButton:hover{
-    background-color: #143A51;
+    background-color: #424242;
     transform: rotateX(35deg);
 }
 
 #femaleButton{
     transition: background-color 2s, transform 1s;
-    background-color: #7399BD; /* #1C477F; */ 
+    background-color: #747C81; /* #1C477F; */ 
 }
 
 #femaleButton:hover{
-    background-color: #143A51;
+    background-color: #424242;
     transform: rotateX(35deg);
 }
 
 #otherButton{
     transition: background-color 2s, transform 1s;
-    background-color: #7399BD; /* #1C477F; */ 
+    background-color: #747C81; /* #1C477F; */ 
 }
 
 #otherButton:hover{
-    background-color: #143A51;
+    background-color: #424242;
     transform: rotateX(35deg);
 }
 
@@ -74,3 +74,4 @@ h1 {
     font-size: 45px;
     font-weight: 200;
 }
+
