@@ -10,7 +10,12 @@ background-image: url("../images/sky.jpeg");
 .nav {
     border: solid 2px white;
     padding-right: 1.2rem;
+}
 
+.click {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
 }
 
 a > img {
@@ -23,11 +28,43 @@ button {
     border-radius: 10px;
     font-size: larger;
     background-color:  #696868;
-    color: whitesmoke;
+    color: rgb(233, 224, 224);
     font-weight: 500;
     justify-content: center;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 8px;
 }
+
+#maleButton{
+    transition: background-color 2s, transform 1s;
+    background-color:  #7399BD;/* #1C477F; */  /*  #746C6B */
+}
+
+#maleButton:hover{
+    background-color: #143A51;
+    transform: rotateX(35deg);
+}
+
+#femaleButton{
+    transition: background-color 2s, transform 1s;
+    background-color: #7399BD; /* #1C477F; */ 
+}
+
+#femaleButton:hover{
+    background-color: #143A51;
+    transform: rotateX(35deg);
+}
+
+#otherButton{
+    transition: background-color 2s, transform 1s;
+    background-color: #7399BD; /* #1C477F; */ 
+}
+
+#otherButton:hover{
+    background-color: #143A51;
+    transform: rotateX(35deg);
+}
+
 
 h1 {
     color: whitesmoke;

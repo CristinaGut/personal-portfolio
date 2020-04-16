@@ -50,4 +50,4 @@ function populateDOM(characters) {
     })
 }
 
-populateDOM(people) ///can delete to have blank page w buttons
+/* populateDOM(people) */ ///can delete to have blank page w buttons
