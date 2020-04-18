@@ -39,7 +39,6 @@ li {
     list-style-type: none;
     color: black;
     transition-property: color;
-    transition-duration: 1s;
     transition-timing-function: ease-in-out;
 }
 
@@ -49,6 +48,7 @@ li:not(:last-child) {
 
 li:hover, li:focus {
     color: rgb(11, 75, 160);
+   
 }
 
 /* ul.navlist {
