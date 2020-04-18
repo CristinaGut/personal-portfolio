@@ -17,29 +17,32 @@ getPokeData('https://pokeapi.co/api/v2/pokemon')
 function populatePokeCards(pokeArray) {
     pokeArray.forEach((pokemon) => {
 
+        let pokeScene = document.createElement('div')
+        pokeScene.className = 'scene'
         let pokeCard = document.createElement('div')
         pokeCard.className = 'card'
-        let pokeContent = document.createElement('div')
-        pokeContent.className = 'content'
         let pokeFront = document.createElement('div')
-        pokeFront.className = 'front'
+        pokeFront.className = 'card__face card__face--front'
         pokeFront.textContent = "front"
         let pokeBack = document.createElement('div')
-        pokeBack.className = 'back'
+        pokeBack.className = 'card__face card__face--back'
         pokeBack.textContent = "back.."
 
-        pokeContent.appendChild(pokeFront)
-        pokeContent.appendChild(pokeBack)
-        pokeCard.appendChild(pokeContent)
-        pokeContainer.appendChild(pokeCard)
+        pokeCard.appendChild(pokeFront)
+        pokeCard.appendChild(pokeBack)
+        pokeScene.appendChild(pokeCard)
+        pokeContainer.appendChild(pokeScene)
     })
 }
 
 
-
-/* div class="card">
-  <div class="content">
-    <div class="front">
-      Front
-    </div>
-    <div class="back"></div> */
+{/* <div class="scene">
+  <div class="card">
+    <div class="card__face card__face--front">front</div>
+    <div class="card__face card__face--back"><div><p>Hi,I'm here on the back</p></div></div>
+    
+    var card = document.querySelector('.card');
+card.addEventListener( 'click', function() {
+  card.classList.toggle('is-flipped');
+});
+ */}

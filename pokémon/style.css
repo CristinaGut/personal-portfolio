@@ -1,6 +1,7 @@
 .pokeContainer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 body { font-family: sans-serif; }
