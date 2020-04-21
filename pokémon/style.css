@@ -4,7 +4,58 @@
     justify-content: space-between;
 }
 
-body { font-family: sans-serif; }
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body { font-family: 'Signika', sans-serif;}
+
+nav {
+    display: flex;
+    padding: 12px;
+    background-color: #333;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div #startButton, #newButton {
+    width: 100px;
+    border: 1px solid #fff;
+    border-radius: 18px;
+    outline: 0;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    font: bold 12px Verdana;
+    color: #333;
+    background-color: #fff;
+    transition-property: color, background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+  }
+
+  div #startButton:not(:last-child), #newButton:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  div #startButton:hover, #newButton:hover,
+  div #startButton:focus, #newButton:focus {
+    color: #fff;
+    background-color: #333;
+  }
+
+#startButton {
+    font-family: 'Signika', sans-serif;
+    color: grey;
+    border-radius: .5px;
+}
+
+#newButton {
+    font-family: 'Signika', sans-serif;
+    border-radius: 1px;
+}
 
 .scene {
   width: 200px;
@@ -12,6 +63,7 @@ body { font-family: sans-serif; }
   border: 1px solid #CCC;
   margin: 40px 0;
   perspective: 600px;
+  border-radius: 20px;
 }
 
 .card {
@@ -25,6 +77,7 @@ transform-style: preserve-3d;
 
 .card.is-flipped {
   transform: rotateY(180deg);
+  border-radius: 20px;
 }
 
 .card__face {
@@ -35,6 +88,7 @@ transform-style: preserve-3d;
   text-align: center;
   font-size: 20px;
   backface-visibility: hidden;
+  border-radius: 20px;
 }
 
 .card__face--front {
