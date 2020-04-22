@@ -4,6 +4,10 @@
   padding: 2px;
 }
 
+nav, header {
+  position: initial;
+}
+
 .pokeContainer {
     display: flex;
     flex-wrap: wrap;
@@ -115,12 +119,23 @@ border-bottom: thick double lightblue;
 }
 
 .card__face--back {
-  background: rgba(6, 9, 177, 0.842);
+  background-image: url("../images/gold.jpg");
   transform: rotateY(180deg);
+  border: 7px ridge rgb(30, 60, 190);
 }
 
 img {
   margin-top: 44px;
+}
 
+.pokemon li, ul {
+  color: grey;
+  font-size: 16px;
+  list-style-type: none;
+}
 
+.card.is-flipped p {
+  color: grey;
+  font-size: 12px;
+  list-style-type: none;
 }

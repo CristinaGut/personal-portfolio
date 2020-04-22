@@ -21,7 +21,7 @@ async function getAPIData(url) {
 }
 
 function loadPage() {
-    getAPIData('https://pokeapi.co/api/v2/pokemon/?&limit=25').then(
+    getAPIData('https://pokeapi.co/api/v2/pokemon/?&limit=151').then(
         (data) => {
             for (const pokemon of data.results) {
                 getAPIData(pokemon.url).then(
@@ -55,7 +55,7 @@ function populatePokeCard(singlePokemon) {
 function populateCardFront(pokemon) {
     let cardFront = document.createElement('div')
     cardFront.className = 'card__face card__face--front'
-    
+
     let frontImage = document.createElement('img')
     frontImage.src = `../images/${getImageFileName(pokemon)}.png`
     let frontLabel = document.createElement('p')
@@ -70,31 +70,47 @@ function getImageFileName(pokemon) {
         return `00${pokemon.id}`
     } else if (pokemon.id > 9 && pokemon.id < 100) {
         return `0${pokemon.id}`
-    }  else return `pokeball`
+    } else if (pokemon.id > 100 && pokemon.id <200) {
+    } return `${pokemon.id}`
 }
 
 function populateCardBack(pokemon) {
     let cardBack = document.createElement('div')
     cardBack.className = 'card__face card__face--back'
-    cardBack.textContent = pokemon.stats[0].stat.name
+    let abilityList = document.createElement('ul')
+    abilityList.textContent = 'Abilities:'
+    pokemon.abilities.forEach(ability => {
+        let abilityName = document.createElement('li')
+        abilityName.textContent = ability.ability.name
+        abilityList.appendChild(abilityName)
+    })
+    let moveList = document.createElement('p')
+    moveList.textContent = `Level 0 Moves: ${getPokemonMoves(pokemon, 0).length}`
+    cardBack.appendChild(abilityList)
+    cardBack.appendChild(moveList)
     return cardBack
 }
 
+function getPokemonMoves(pokemon, levelLearnedAt) {
+    console.log(`Name: ${pokemon.name} Number of Moves: ${pokemon.moves.length}`)
+    return pokemon.moves.filter(move => {
+        return move.version_group_details[0].level_learned_at === levelLearnedAt
+    })
+}
+
 class Pokemon {
-    constructor(height, weight, name, stats) {
+    constructor(height, weight, name, abilities, moves) {
         this.height = height
         this.weight = weight
         this.name = name
-        this.stats = this.stats
+        this.abilities = abilities
+        this.moves = moves
         this.id = 900
     }
 }
 
 function addPokemon() {
-    let newPokemon = new Pokemon(50, 25, 'NomNom', [
-      {
-        stat:
-          { name: 'Claws' }
-      }])
-    populatePokeCard(newPokemon)
-    }
+    data.sort((a, b) => a - b);
+    [pokeData].sort((a, b) => a - b);
+console.log(pokeData);
+}
