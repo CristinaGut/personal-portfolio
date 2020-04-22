@@ -1,3 +1,9 @@
+:root{
+  background-color: rgba(158, 154, 154, 0.897);
+  margin: 10px;
+  padding: 2px;
+}
+
 .pokeContainer {
     display: flex;
     flex-wrap: wrap;
@@ -8,6 +14,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-weight: 500;
+   
 }
 
 body { font-family: 'Signika', sans-serif;}
@@ -32,8 +40,8 @@ nav {
     color: #333;
     background-color: #fff;
     transition-property: color, background-color;
-    transition-duration: 1s;
-    transition-timing-function: ease-out;
+    transition-duration: .75s;
+    transition-timing-function: ease-in;
   }
 
   div #startButton:not(:last-child), #newButton:not(:last-child) {
@@ -50,17 +58,19 @@ nav {
     font-family: 'Signika', sans-serif;
     color: grey;
     border-radius: .5px;
+    
 }
 
 #newButton {
     font-family: 'Signika', sans-serif;
-    border-radius: 1px;
+    font-size: 14px;
+    
 }
 
 .scene {
   width: 200px;
   height: 260px;
-  border: 1px solid #CCC;
+  /* border: .5px solid #CCC; */
   margin: 40px 0;
   perspective: 600px;
   border-radius: 20px;
@@ -73,11 +83,13 @@ nav {
 transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
+  border-style: solid black 5px;
 }
 
 .card.is-flipped {
   transform: rotateY(180deg);
   border-radius: 20px;
+  border-style: solid black 5px;
 }
 
 .card__face {
@@ -89,13 +101,26 @@ transform-style: preserve-3d;
   font-size: 20px;
   backface-visibility: hidden;
   border-radius: 20px;
+  
 }
 
 .card__face--front {
-  background: rgb(86, 150, 233);
+  background-image: url("../images/blue-bg.jpg");
+  border: 7px ridge rgb(204, 135, 8);
+}
+
+.card__face--front p {
+border-top: thick double lightblue;
+border-bottom: thick double lightblue;
 }
 
 .card__face--back {
-  background: blue;
+  background: rgba(6, 9, 177, 0.842);
   transform: rotateY(180deg);
+}
+
+img {
+  margin-top: 44px;
+
+
 }
