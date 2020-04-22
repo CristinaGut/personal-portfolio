@@ -70,7 +70,7 @@ function getImageFileName(pokemon) {
         return `00${pokemon.id}`
     } else if (pokemon.id > 9 && pokemon.id < 100) {
         return `0${pokemon.id}`
-    } else if (pokemon.id > 100 && pokemon.id <200) {
+    } else if (pokemon.id > 100 && pokemon.id < 200) {
     } return `${pokemon.id}`
 }
 
@@ -92,7 +92,7 @@ function populateCardBack(pokemon) {
 }
 
 function getPokemonMoves(pokemon, levelLearnedAt) {
-    console.log(`Name: ${pokemon.name} Number of Moves: ${pokemon.moves.length}`)
+    /* console.log(`Name: ${pokemon.name} Number of Moves: ${pokemon.moves.length}`) */
     return pokemon.moves.filter(move => {
         return move.version_group_details[0].level_learned_at === levelLearnedAt
     })
@@ -105,12 +105,36 @@ class Pokemon {
         this.name = name
         this.abilities = abilities
         this.moves = moves
-        this.id = 900
+        this.id = 'pokeball'
     }
 }
 
-function addPokemon() {
+function populatePokeOrder() {
     data.sort((a, b) => a - b);
     [pokeData].sort((a, b) => a - b);
-console.log(pokeData);
 }
+
+function addPokemon() {
+    let newPokemon = new Pokemon (50, 25, 'NomNom', [
+        {
+            ability:
+            { name: 'Nap Time' }
+        },
+        {  ability:
+            { name: 'Swipe Food' }
+        }
+      ],
+        [
+          {
+            move: {
+              name: "Munch"
+            },
+            version_group_details: [
+              {
+              level_learned_at: 0
+              }
+            ]
+          }
+        ])
+      populatePokeCard(newPokemon)
+    }

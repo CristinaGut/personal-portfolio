@@ -2,6 +2,7 @@
   background-color: rgba(158, 154, 154, 0.897);
   margin: 10px;
   padding: 2px;
+  scroll-behavior: smooth;
 }
 
 nav, header {
@@ -19,7 +20,7 @@ header {
     flex-direction: column;
     align-items: center;
     font-weight: 500;
-   
+  
 }
 
 body { font-family: 'Signika', sans-serif;}
@@ -65,9 +66,13 @@ nav {
     
 }
 
-#newButton {
+#newButton, footer, a {
     font-family: 'Signika', sans-serif;
     font-size: 14px;
+    scroll-behavior: smooth;
+    list-style-type: none;
+    text-decoration: none;
+    color: #333;
     
 }
 
@@ -119,9 +124,9 @@ border-bottom: thick double lightblue;
 }
 
 .card__face--back {
-  background-image: url("../images/gold.jpg");
+  background-image: url("../images/blu-glass\ copy.jpeg");
   transform: rotateY(180deg);
-  border: 7px ridge rgb(30, 60, 190);
+  border: 7px ridge rgb(235, 182, 86);
 }
 
 img {
@@ -129,13 +134,23 @@ img {
 }
 
 .pokemon li, ul {
-  color: grey;
+  display: block;
+  color: yellow;
   font-size: 16px;
-  list-style-type: none;
+  list-style-type: square;
+  text-align: left;
+}
+
+li, ul {
+  margin: 10px;
+  margin-top: 14px;
+  text-align: left;
+  padding-top: 10px;
+  padding: none;
 }
 
 .card.is-flipped p {
-  color: grey;
-  font-size: 12px;
+  color:rgb(241, 212, 78);
+  font-size: 15px;
   list-style-type: none;
 }
