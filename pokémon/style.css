@@ -83,11 +83,11 @@ a {
     font-size: 4px;
   
 
-div .click:hover, 
+/* div .click:hover, 
 div .click:focus {
   color: #fff;
   background-color: #333;
-} 
+}  */
 
 .scene {
   width: 200px;
