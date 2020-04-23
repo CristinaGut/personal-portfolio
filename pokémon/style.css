@@ -53,7 +53,7 @@ nav {
     margin-right: 12px;
   }
 
-  div #startButton:hover, #newButton:hover,
+  div #startButton:hover, #newButton:hover, a:hover
   div #startButton:focus, #newButton:focus {
     color: #fff;
     background-color: #333;
@@ -66,7 +66,7 @@ nav {
     
 }
 
-#newButton, footer, a {
+#newButton, a {
     font-family: 'Signika', sans-serif;
     font-size: 14px;
     scroll-behavior: smooth;
@@ -77,6 +77,11 @@ nav {
     text-decoration-color: none;
     /* color: #333; */
 }
+
+a {
+  font-family: 'Signika', sans-serif;
+    font-size: 4px;
+  
 
 div .click:hover, 
 div .click:focus {
