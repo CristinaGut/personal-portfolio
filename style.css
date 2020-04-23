@@ -19,8 +19,12 @@
     display: flex;
     list-style-type: none;
     font-size: 1.1rem;
-    font-weight: 300;
-    
+    font-weight: 300; 
+}
+
+.nav-list a:hover {
+    color: lightblue;
+    border-bottom: solid 2px ;
 }
 
 .nav-list a {
@@ -29,6 +33,9 @@
     padding: 1rem;
     text-decoration: none;
     color:rgba(117, 143, 165, 1);
+    transition-property: color, border-bottom;
+    transition-duration: .75s;
+    transition-timing-function: ease-in;
 }
 
 #welcome-section {
