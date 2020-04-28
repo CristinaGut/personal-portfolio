@@ -76,10 +76,6 @@ button {
   transform: translateY(-0.25em);
 }
 
-#otherButton:active {
-
-}
-
 /* #otherButton:hover{
     background-color: #424242;
     transform: rotateX(35deg);
