@@ -18,6 +18,12 @@ background-image: url("../images/sky.jpeg");
     padding: 5px;
 }
 
+.gallery a img{
+border-radius: 10px;
+ border: ridge 2.5px rgb(241, 220, 189);
+ box-shadow: 0 3.5px 7px -.15px rgb(241, 220, 189);
+}
+
 a > img {
 height: 14em;
 margin: 4px;
@@ -26,44 +32,54 @@ margin: 4px;
 button {
     height: 4rem;
     border-radius: 10px;
-    font-size: larger;
+    border: thick double rgb(241, 220, 189);
+    font-size: 15px;
     background-color:  #696868;
     color: rgb(252, 240, 240);
     font-weight: 500;
     justify-content: center;
     font-family: 'Noto Sans TC', sans-serif;
     margin: 8px;
+    overflow: visible;
 }
 
 #maleButton{
-    transition: background-color 2s, transform 1s;
-    background-color:  #747C81;  /*  #746C6B */
+    transition: box-shadow .3s, transform 2s;
+    background-color:  #3d3232; 
 }
 
-#maleButton:hover{
-    background-color: #424242;
-    transform: rotateX(35deg);
+#maleButton:hover,
+#maleButton:focus {
+  box-shadow: 0 5px 10px -.15px rgb(241, 220, 189);
+  transform: translateY(-0.25em);
 }
 
 #femaleButton{
-    transition: background-color 2s, transform 1s;
-    background-color: #747C81; /* #1C477F; */ 
+    transition: box-shadow .3s, transform 1s;
+    background-color: #3d3232; /* #1C477F; */ 
 }
 
-#femaleButton:hover{
-    background-color: #424242;
-    transform: rotateX(35deg);
+#femaleButton:hover,
+#femaleButton:focus {
+  box-shadow: 0 5px 10px -.15px rgb(241, 220, 189); 
+  transform: translateY(-0.25em);
 }
 
 #otherButton{
-    transition: background-color 2s, transform 1s;
-    background-color: #747C81; /* #1C477F; */ 
+    transition: box-shadow .3s, transform 1s;
+    background-color: #3d3232; /* #1C477F; */ 
 }
 
-#otherButton:hover{
+#otherButton:hover,
+#otherButton:focus {
+  box-shadow: 0 5px 10px -.15px rgb(241, 220, 189);
+  transform: translateY(-0.25em);
+}
+
+/* #otherButton:hover{
     background-color: #424242;
     transform: rotateX(35deg);
-}
+} */
 
 
 h1 {
