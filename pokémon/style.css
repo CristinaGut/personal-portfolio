@@ -25,7 +25,7 @@ header {
     font-size: 30px;
     font-weight: 500;
     color: gold;
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.733);
     text-shadow:  5px 0 7px rgb(5, 103, 248); 
 }
 
