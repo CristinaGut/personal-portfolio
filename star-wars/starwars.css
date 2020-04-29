@@ -38,7 +38,7 @@ button {
     color: rgb(252, 240, 240);
     font-weight: 500;
     justify-content: center;
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 8px;
     overflow: visible;
 }
@@ -86,8 +86,8 @@ h1 {
     color: whitesmoke;
     justify-content: center;
     display: flex;
-    font-family: 'Noto Sans TC', sans-serif;
-    font-size: 45px;
-    font-weight: 200;
+    font-family: 'Bangers', cursive;
+    font-size: 55px;
+    font-weight: 400;
 }
 
